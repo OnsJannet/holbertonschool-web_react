@@ -2,7 +2,7 @@ interface Student {
 	firstName: string;
 	lastName: string;
 	age: number;
-	location: string;
+	location: string,
 }
 
 const student1: Student = {
@@ -27,7 +27,7 @@ studentList.forEach((object) => {
 	const row = document.createElement('tr');
 	const CName = document.createElement('td');
 	const CLocation = document.createElement('td');
-	CName.textContent = object.firstChild;
+	CName.textContent = object.firstName;
 	CLocation.textContent = object.location;
 	row.appendChild(CName);
 	row.appendChild(CLocation);

@@ -7,15 +7,15 @@
     "dev": "webpack --mode development",
     "build": "webpack"
   },
-  "keywords": [],
+ "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21"
+  },
   "devDependencies": {
     "webpack": "^5.60.0",
     "webpack-cli": "^4.9.1"
   },
-  "dependencies": {
-    "jquery": "^3.6.0",
-    "lodash": "^4.17.21"
-  }
 }

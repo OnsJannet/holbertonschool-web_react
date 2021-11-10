@@ -2,11 +2,16 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
+  devtool: 'inline-source-map',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  devServer: {
+    hot: true,
+    contentBase: path.resolve(__dirname, 'dist'),
+  }
   module: {
     rules: [
       {
@@ -16,7 +21,7 @@ module.exports = {
       {
         test: /\.jpg$/,
         use: {
-          loader: 'file-loader'
+          loader: 'image-webpack-loader'
         }
       }
     ]

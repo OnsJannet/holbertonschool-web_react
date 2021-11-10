@@ -1,4 +1,5 @@
 import logo from './HS_logo.jpg';
+import React from 'react';
 import {getFullYear, getFooterCopy} from './utils.js';
 import {Notifications} from './Notifications.js';
 import './App.css';

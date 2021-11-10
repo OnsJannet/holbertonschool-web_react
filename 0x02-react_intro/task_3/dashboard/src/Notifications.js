@@ -2,9 +2,9 @@ import React from 'react';
 
 import './Notifications.css';
 import { getLatestNotification } from './utils';
-import closeIcon from './close-icon.png';
+import closeIcon from './Close-icon.png';
 
-export const Notification = () => {
+export const Notifications = () => {
   return (
     <div className='Notifications'>
       <p>Here is the list of notifications</p>
@@ -30,4 +30,4 @@ export const Notification = () => {
     </div>
   );
 };
-export default Notification;
+export default Notifications;
